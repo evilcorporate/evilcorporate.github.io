@@ -6,6 +6,9 @@
   h1 {
     color:#fff;
     font-size: 3rem;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin-bottom: 3rem;
   }
   html {
   height: 100%;
@@ -16,24 +19,42 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Georgia';
+    font-family: 'Helvetica';
     margin:0;
   }
-  div {
-    width:25%;
-    border-top:1px solid #f08080;
-    border-bottom:1px solid #a7c3cc;
-    border-right:1px solid #ffc269;
-    border-left:1px solid #9bea9b;
-    border-width: 2px;
-    padding:3%;
-    max-width:420px;
+  .colors {
+    width:100%;
     min-width:300px;
-    text-align: center
+    position: relative;
+  }
+  .color {
+    height:3.5rem;
+    opacity: .15;
+  }
+  .color:nth-of-type(1) {
+    background: #5db1cc;
+  }
+  .color:nth-of-type(2) {
+    background: #ffc269;
+  }
+  .color:nth-of-type(3) {
+    background: #9bea9b;
+  }
+  .color:nth-of-type(4) {
+    background: #f08080;
+  }
+  .content {
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    margin:auto;
+    padding:0 3rem;
   }
   p {
     color:#fff;
     font-size:1.1rem;
+    font-weight: lighter;
   }
   a,a:hover,a:focus,a:active,a:visited {
     color:#fff;
@@ -47,9 +68,15 @@
   <link rel="shortcut icon" href="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAZ0lEQVR42u3QgRAAQAgAsA/kEeLIn6g4ujaExc/qd1gIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAAB+w2H+mRB7HydPwAAAABJRU5ErkJggg==" />
 </head>
 <body>
-  <div>
-    <h1>bulletin.ai</h1>
-    <p><a href="mailto:hello@bulletin.ai">hello@bulletin.ai</a></p>
+  <div class="colors">
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="color"></div>
+    <div class="content">
+      <h1>bulletin.ai</h1>
+      <p><a href="mailto:hello@bulletin.ai">hello@bulletin.ai</a></p>
+    </div>
   </div>
 </body>
 </html>
