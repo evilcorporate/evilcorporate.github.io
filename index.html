@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" />
   <style>
   h1 {
     color:#fff;
     font-size: 3rem;
     line-height: 1;
-    letter-spacing: 2px;
-    margin-bottom: 3rem;
+    letter-spacing: -1px;
+    margin-bottom:.5rem;
   }
   html {
   height: 100%;
   }
   body {
     min-height: 100%;
+    height:100%;
     background: #1d2d47;
     display: flex;
     align-items: center;
@@ -24,21 +26,22 @@
   }
   .colors {
     width:100%;
-    min-width:300px;
     position: relative;
+    height:50%;
   }
   .color {
-    height:3.5rem;
+    height: 25%;
     opacity: .15;
+    animation: colors .5s;
   }
   .color:nth-of-type(1) {
     background: #5db1cc;
   }
   .color:nth-of-type(2) {
-    background: #ffc269;
+    background: #9bea9b;
   }
   .color:nth-of-type(3) {
-    background: #9bea9b;
+    background: #ffc269;
   }
   .color:nth-of-type(4) {
     background: #f08080;
@@ -48,21 +51,32 @@
     left:0;
     right:0;
     top:0;
+    bottom: 0;
     margin:auto;
-    padding:0 3rem;
+    width:25%;
+    min-width: 300px;
+    height:50%;
   }
   p {
     color:#fff;
-    font-size:1.1rem;
+    font-size:1.25rem;
     font-weight: lighter;
+  }
+  a {
+    transition: padding .25s;
   }
   a,a:hover,a:focus,a:active,a:visited {
     color:#fff;
     text-decoration: none;
   }
   a:hover {
-    text-decoration: underline;
+    border-bottom:1px solid #fff;
+    padding-right:5px;
   }
+  @keyframes colors {
+    0%   {height:0%}
+    100% {height:25%}
+}
   </style>
   <title>bulletin.ai</title>
   <link rel="shortcut icon" href="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAZ0lEQVR42u3QgRAAQAgAsA/kEeLIn6g4ujaExc/qd1gIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAABAgQIECBAgAAB+w2H+mRB7HydPwAAAABJRU5ErkJggg==" />
